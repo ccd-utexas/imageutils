@@ -26,3 +26,33 @@ Status reports for developers
 .. image:: https://landscape.io/github/astropy/imageutils/master/landscape.png
     :target: https://landscape.io/github/astropy/imageutils/master
     :alt: Code Health
+
+Note for ccd-utexas:
+=========
+
+**Purpose:** This fork is used to control the imageutils version in use for tsphot.
+When imageutils is integrated with astropy, or when a stable version is released, delete this repository
+and use astropy.image through the Anaconda Python distribution.
+
+**To install:** Install and update anaconda. Then clone this repository ; ``$ cd /path/to/imageutils``;
+``$ python setup.py install``
+
+**Note:** Import will fail if ``pwd`` is ``/path/to/imageutils``.
+
+Code in this repository is subject to being overwritten by subsequent releases of imageutils.
+
+To update ccd-utexas/imageutils from astropy/imageutils:
+
+- Navigate to https://github.com/ccd-utexas/imageutils
+
+- click "Compare"
+
+- click "Edit"
+
+- Set:
+
+  - base fork: ccd-utexas/imageutils  base: master
+
+  - head fork: astropy/imageutils  compare: master
+
+- This will merge astropy/imageutils into ccd-utexas/imageutils
