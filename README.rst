@@ -37,7 +37,7 @@ and use astropy.image through the Anaconda Python distribution.
 **To install:** Install and update anaconda. Then clone this repository ; ``$ cd /path/to/imageutils``;
 ``$ python setup.py install``
 
-**Note:** Import will fail if ``pwd`` is ``/path/to/imageutils``.
+**Note:** Import will fail if present working directory is ``/path/to/imageutils``.
 
 Code in this repository is subject to being overwritten by subsequent releases of imageutils.
 
